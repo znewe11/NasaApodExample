@@ -3,6 +3,7 @@ package com.nasaexampleproject.nasaexampleapi.datamodel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 /*
  * Data model for the Astronomy Picture of the Day.
@@ -12,6 +13,7 @@ import lombok.Data;
 @Data
 @Builder
 @AllArgsConstructor
+@RequiredArgsConstructor
 public class Apod {
     private String title;
     private String url;

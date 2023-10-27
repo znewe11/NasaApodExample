@@ -29,7 +29,7 @@ public class ApodController {
      */
     @GetMapping("/today")
     public Apod getApod () {
-        String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
+        String date = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
 
         return apodActivity.getApod(date);
     }
