@@ -17,6 +17,6 @@ import lombok.RequiredArgsConstructor;
 public class Apod {
     private String title;
     private String url;
-    private String explaination;
+    private String explanation;
     private String date;
 }

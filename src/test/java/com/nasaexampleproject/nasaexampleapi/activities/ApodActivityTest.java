@@ -17,7 +17,7 @@ public class ApodActivityTest {
 
     private static final String DATE_STRING = "2023-10-20";
     private static final String TITLE = "SomeTitle";
-    private static final String EXPLAINATION = "Some Explaination";
+    private static final String EXPLANATION = "Some Explaination";
     private static final String SOME_URL = "https://helloworld.com";
 
     private ApodActivity apodActivity;
@@ -35,7 +35,7 @@ public class ApodActivityTest {
         // Given
         Apod expectedApod = Apod.builder()
                                 .title(TITLE)
-                                .explaination(EXPLAINATION)
+                                .explanation(EXPLANATION)
                                 .url(SOME_URL)
                                 .date(DATE_STRING)
                                 .build();
@@ -48,7 +48,7 @@ public class ApodActivityTest {
 
         // Then
         assertEquals(expectedApod.getTitle(), responseApod.getTitle());
-        assertEquals(expectedApod.getExplaination(), responseApod.getExplaination());
+        assertEquals(expectedApod.getExplanation(), responseApod.getExplanation());
         assertEquals(expectedApod.getUrl(), responseApod.getUrl());
         assertEquals(expectedApod.getDate(), responseApod.getDate());
     }
